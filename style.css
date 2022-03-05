@@ -82,10 +82,15 @@ body {
     margin-left: 50px;
 }
 
+#txt {
+    position: absolute;
+    left: 135px;
+}
+
 #img {
     position: absolute;
-    left: 900px;
-    width: 700px;
+    left: 870px;
+    width: 500px;
     height: auto;
 }
 
