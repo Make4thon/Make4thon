@@ -13,18 +13,24 @@
 
 <body>
     <span class="d-block p-2 bg-dark text-white">RealityLive</span>
-    <!-- search box-->
-    <div class="sticky-md-top">
-        <center id="srcbtn">
-            <div class="input-group mb-3">
-                <input align="middle" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </div>
-            </id>
-        </center>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     </div>
-    <!---->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <!-- search box-->
+        <div class="sticky-md-top">
+            <center id="srcbtn">
+                <div class="input-group mb-3">
+                    <input align="middle" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+                </id>
+            </center>
+        </div>
+        <!---->
+        <script src="file.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
