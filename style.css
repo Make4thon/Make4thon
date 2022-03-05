@@ -42,11 +42,14 @@
 }
 
 .openbtn {
-    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 1500px;
+    font-size: 15px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: none;
 }
 
