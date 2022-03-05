@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("/template/index.html")
+    return render_template("index.html")
 
 @app.route("/download_video", methods=["GET", "POST"])
 def download_video():
