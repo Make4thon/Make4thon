@@ -8,6 +8,11 @@
     /*  often useful to keep screen orderly */
 }
 
+button {
+    border: none;
+    padding: 0;
+}
+
 .dark-mode {
     --primary-color: #0e141b;
     --secondary-color: #182129;
