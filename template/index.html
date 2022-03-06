@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        RealityLive
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #srcbtn {
+            position: absolute;
+            top: 320px;
+            /* I usually locate relative to top  */
+            left: 580px;
+            position: fixed;
+            /* left corner of container (screen) */
+            /*  often useful to keep screen orderly */
+        }
+        
+        .dark-mode {
+            --primary-color: #0e141b;
+            --secondary-color: #182129;
+            --text-color: #fff;
+            --glassmorphism-shadow: none;
+            --tertiary-color: #fff;
+            --card-background-color: rgba(255, 255, 255, 0.1);
+            --moon-color: #ffce45;
+        }
+        
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        
+        .dark-light {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            height: 50px;
+            width: 50px;
+            background-color: var(--dropdown-bg);
+            box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.2);
+            padding: 8px;
+            border-radius: 50%;
+            z-index: 3;
+            cursor: pointer;
+            color: var(--moon-color);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: var(--glassmorphism-border);
+        }
+        
+        #txt {
+            position: absolute;
+            left: 135px;
+        }
+        
+        #img {
+            position: absolute;
+            left: 870px;
+            width: 500px;
+            height: auto;
+        }
+        
+        .openbtn {
+            position: absolute;
+            top: 29px;
+            left: 1500px;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+        }
+        
+        .openbtn:hover {
+            background-color: #444;
+        }
+        
+        #lgoo {
+            color: red;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        body {
+            color: antiquewhite;
+            background-color: red;
+        }
+        
+        #ab {
+            position: absolute;
+            top: 180px;
+            left: 650px;
+        }
+    </style>
+</head>
+
+<body>
+    <center id="ab">
+        <p class="h1">KeepYT</p>
+    </center>
+
+    <!-- search box-->
+    <div class="sticky-md-top">
+        <center id="srcbtn">
+            <p class="h4">Search and Get the Video!</p>
+            <div class="form">
+                <form action="/download_video" method="post">
+                    <input type="text" name="URL" placeholder="type the url">
+                    <input type="submit" value="Submit">
+            </div><br><br>
+    </div>
+    </id>
+    </center>
+    </div>
+    <!---->
+    <div class="dark-light">
+        <svg onclick="DarkMode()" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "550px";
+            document.getElementById("main").style.marginLeft = "550px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+
+
+        function DarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
